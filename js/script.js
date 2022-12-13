@@ -10,8 +10,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-Unit5-06-Loop/sw.js", {
-    scope: "/ICS20-Unit5-06-Loop/",
+  navigator.serviceWorker.register("/ICS20-Unit5-08-JS/sw.js", {
+    scope: "/ICS20-Unit5-08-JS/",
   })
 }
 
@@ -24,8 +24,8 @@ function myButtonClicked() {
   let answer = 0
 
   while (counter < secondNumber) {
-    answer = firstNumber + answer
+    answer = firstNumber - answer
     document.getElementById("ANS").innerHTML = "The answer is " + answer + "."
-    counter++
+    counter--
   }
 }
