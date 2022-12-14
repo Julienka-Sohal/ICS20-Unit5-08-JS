@@ -21,11 +21,12 @@ function myButtonClicked() {
   let firstNumber = parseInt(document.getElementById("numberOne").value)
   let secondNumber = parseInt(document.getElementById("numberTwo").value)
   let counter = 0
-  let answer = 0
+  let answer = firstNumber
 
-  while (counter < secondNumber) {
-    answer = firstNumber - answer
-    document.getElementById("ANS").innerHTML = "The answer is " + answer + "."
-    counter--
+  while (answer >= secondNumber) {
+    answer = answer - secondNumber
+      document.getElementById("ANS").innerHTML = "The answer is " + answer + "."
+        counter++
   }
+  
 }
