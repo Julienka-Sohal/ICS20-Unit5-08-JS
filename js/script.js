@@ -25,7 +25,11 @@ function myButtonClicked() {
 
   while (answer >= secondNumber) {
     answer = answer - secondNumber
-    document.getElementById("ANS").innerHTML = "The answer is " + answer + "."
-    counter++
+    if (counter = answer - 1) {
+      let answerTwo = parseInt(document.getElementById("ANSTWO").value)
+    }
+      document.getElementById("ANS").innerHTML = "The answer is " + answerTwo + " R " +answer + "."
+        counter++
   }
+  
 }
