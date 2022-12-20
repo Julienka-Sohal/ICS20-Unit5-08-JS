@@ -22,11 +22,12 @@ function myButtonClicked() {
   let temp = 0
   let rem = num
   while (rem != 1) {
-    if(den != 0){
+    if (den != 0) {
       rem = rem - den
       temp++
     }
   }
-  document.getElementById("ANS").innerHTML(num + '/' + den + ' = ' + temp + ' R ' + rem)
-  
+  document
+    .getElementById("ANS")
+    .innerHTML(num + "/" + den + " = " + temp + " R " + rem)
 }
