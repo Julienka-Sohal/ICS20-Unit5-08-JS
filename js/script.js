@@ -27,7 +27,5 @@ function myButtonClicked() {
       temp++
     }
   }
-  document
-    .getElementById("ANS")
-    .innerHTML(num + "/" + den + " = " + temp + " R " + rem)
+  document.getElementById("ANS").innerHTML= num + "/" + den + " = " + temp + " R " + rem
 }
