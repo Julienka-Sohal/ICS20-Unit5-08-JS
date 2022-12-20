@@ -17,19 +17,16 @@ if (navigator.serviceWorker) {
 
 //process
 function myButtonClicked() {
-  //variables
-  let firstNumber = parseInt(document.getElementById("numberOne").value)
-  let secondNumber = parseInt(document.getElementById("numberTwo").value)
-  let counter = 0
-  let answer = firstNumber
-
-  while (answer >= secondNumber) {
-    answer = answer - secondNumber
-    if ((counter = answer - 1)) {
-      let answerTwo = parseInt(document.getElementById("ANSTWO").value)
+  let num = parseInt(document.getElementById("numberOne").value)
+  let den = parseInt(document.getElementById("numberTwo").value)
+  let temp = 0
+  let rem = num
+  while (rem != 1) {
+    if(den != 0){
+      rem = rem - den
+      temp++
     }
-    document.getElementById("ANS").innerHTML =
-      "The answer is " + answerTwo + " R " + answer + "."
-    counter++
   }
+  document.getElementById("ANS").innerHTML(num + '/' + den + ' = ' + temp + ' R ' + rem)
+  
 }
